@@ -1,10 +1,10 @@
-%global commit d41883a9140b769893256a9427d59d2c8ce4bec9
+%global commit f66237001b6a413d1e80710526a00fe26214797b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Summary:          Enable compressed swap in memory
 Name:             zram
 Version:          1.0.0
-Release:          2.git.%{shortcommit}%{?dist}
+Release:          3.git.%{shortcommit}%{?dist}
 License:          GPLv2
 Group:            System Environment/Daemons
 URL:              https://github.com/mystilleef/FedoraZram
@@ -48,6 +48,9 @@ zram compresses swap partitions into RAM for performance.
 
 
 %changelog
+* Tue Sep 06 2016 Pavel Alexeev <Pahan@Hubbitus.info> - 1.0.0-3.git.f662370
+- Update to f66237001b6a413d1e80710526a00fe26214797b
+
 * Sun Jul 05 2015 Pavel Alexeev <Pahan@Hubbitus.info> - 1.0.0-2.git.d41883a
 - Build new release to resolve name conflict with anaconda service - https://github.com/mystilleef/FedoraZram/commit/d41883a9140b769893256a9427d59d2c8ce4bec9
 
