@@ -3,8 +3,8 @@
 
 Summary:          Enable compressed swap in memory
 Name:             zram
-Version:          1.0.0
-Release:          3.git.%{shortcommit}%{?dist}
+Version:          1.0.1
+Release:          1.git.%{shortcommit}%{?dist}
 License:          GPLv2
 Group:            System Environment/Daemons
 URL:              https://github.com/mystilleef/FedoraZram
@@ -48,6 +48,9 @@ zram compresses swap partitions into RAM for performance.
 
 
 %changelog
+* Wed Oct 26 2016 Pavel Alexeev <Pahan@Hubbitus.info> - 1.0.1-1.git.f662370
+- Version now 1.0.1 according to commit.
+
 * Tue Sep 06 2016 Pavel Alexeev <Pahan@Hubbitus.info> - 1.0.0-3.git.f662370
 - Update to f66237001b6a413d1e80710526a00fe26214797b
 
